@@ -8,7 +8,10 @@ const kAndroidUserAgent =
 
 String selectedUrl = 'https://skippar.com';
 
-void main() => runApp(MyApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   final flutterWebViewPlugin = FlutterWebviewPlugin();
